@@ -112,7 +112,7 @@ download_autoglm() {
         fi
     fi
     
-    git clone https://gitee.com/yong-top/Open-AutoGLM.git
+    git clone https://gitee.com/DataTraveler_0817/Open-AutoGLM.git
     
     print_success "Open-AutoGLM 下载完成"
 }
