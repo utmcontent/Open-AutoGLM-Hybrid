@@ -90,7 +90,7 @@ install_python_packages() {
     # pip install --upgrade pip
     
     # 安装依赖
-    pip install pillow openai requests
+    pip install pillow "openai==0.28.1" requests
     
     print_success "Python 依赖安装完成"
 }
