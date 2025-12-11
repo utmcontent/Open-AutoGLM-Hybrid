@@ -159,7 +159,8 @@ PYTHON_EOF
 # 配置 GRS AI
 configure_grsai() {
     print_info "配置 GRS AI..."
-    
+    mkdir -p ~/.autoglm
+    touch ~/.bashrc
     echo ""
     echo "请输入您的 GRS AI API Key:"
     read -p "API Key: " api_key
@@ -199,7 +200,8 @@ EOF
 # 创建启动脚本
 create_launcher() {
     print_info "创建启动脚本..."
-    
+    mkdir -p ~/bin
+    touch ~/.bashrc
     # 创建 autoglm 命令
     cat > ~/bin/autoglm << 'LAUNCHER_EOF'
 #!/data/data/com.termux/files/usr/bin/bash
